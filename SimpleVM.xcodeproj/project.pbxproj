@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032D090E25E0FF5B00D5F995 /* SwiftTerm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftTerm; sourceTree = "<group>"; };
 		CC69033D24CE88B500273851 /* SimpleVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC69034024CE88B500273851 /* SimpleVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVMApp.swift; sourceTree = "<group>"; };
 		CC69034224CE88B500273851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		CC69033424CE88B500273851 = {
 			isa = PBXGroup;
 			children = (
+				032D090E25E0FF5B00D5F995 /* SwiftTerm */,
 				CC69033F24CE88B500273851 /* SimpleVM */,
 				CC69033E24CE88B500273851 /* Products */,
 			);

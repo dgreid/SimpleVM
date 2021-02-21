@@ -9,6 +9,10 @@ import Cocoa
 import SwiftTerm
 
 class ConsoleViewController: NSViewController, TerminalViewDelegate {
+    func hostCurrentDirectoryUpdate(source: TerminalView, directory: String?) {
+        
+    }
+    
     
     private lazy var terminalView: TerminalView = {
         let terminalView = TerminalView()
