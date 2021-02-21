@@ -75,7 +75,7 @@ class VirtualMachineViewModel: NSObject, ObservableObject, VZVirtualMachineDeleg
         
         let bootloader = VZLinuxBootLoader(kernelURL: kernelURL)
         bootloader.initialRamdiskURL = initialRamdiskURL
-        bootloader.commandLine = "console=hvc0"
+        bootloader.commandLine = "console=hvc0 root=/dev/vda rw rootwait noinitrd"
         
         let serial = VZVirtioConsoleDeviceSerialPortConfiguration()
         
@@ -93,7 +93,7 @@ class VirtualMachineViewModel: NSObject, ObservableObject, VZVirtualMachineDeleg
         do {
             blockAttachment = try VZDiskImageStorageDeviceAttachment(
                 url: bootableImageURL,
-                readOnly: true
+                readOnly: false
             )
         } catch {
             NSLog("Failed to load bootableImage: \(error)")
